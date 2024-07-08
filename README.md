@@ -1,1 +1,3 @@
-# Static-Ekart-WebSite
+# Netflix-Clone 
+
+About the Project
