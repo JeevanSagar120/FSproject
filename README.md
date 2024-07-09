@@ -1,3 +1,3 @@
-# Netflix-Clone 
+# Trailer - Hunt
 
 About the Project
