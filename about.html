@@ -12,6 +12,9 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    #srcbtn{
+        background-color: red;
+    }
     .credts{
         display: flex;
         justify-content: center;
@@ -23,7 +26,7 @@
     }
     a{
         text-decoration: none;
-        font-family: cursive;
+        /* font-family: cursive; */
         color: teal;
         text-transform: capitalize;
     }
@@ -77,7 +80,7 @@
         <div class="container-fluid">
             <img src="AppLogo.jpg" alt="logo" height="50px"  width="200px">
                 <form class="d-flex" role="search">
-                    <input id="searchitems" class="form-control me-2 " type="search" placeholder="Search " aria-label="Search">
+                    <input style="text-align: center;" id="searchitems" class="form-control me-2 " type="search" placeholder="Search Movies" aria-label="Search">
                     <button style="color: #ffffff; transition: none;" id="srcbtn" class="btn btn-outline" type="submit">Search</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,21 +89,30 @@
             <div class="connatiner-fluid">
                 <div class="container-fluid collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- Home Bar -->
                         <li class="nav-item" style="font-weight: bold;">
-                            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="main.html"><i class="fa fa-home"></i>  Home</a>
                         </li>
+
+                        <!-- About us  -->
                         <li class="nav-item" style="font-weight: bold;">
-                            <a style="color: black;" class="nav-link" href="about.html">About us</a>
+                            <a style="color: black;" class="nav-link" href="about.html"><i class="fa fa-user"></i> About us</a>
                         </li>
-                        <li class="nav-item dropdown" style="font-weight: bold; color: black;">
-                            <a style="color: black;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            More 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a style="color: black; font-weight: bold;" class="dropdown-item" href="mailto:22ag5a6602@gmail.com">Mail us</a></li>
-                            <li><a style="color: black; font-weight: bold;" class="dropdown-item" href="tel:+919390634012">Call Cutomer Care</a></li>
-                            <li><a style="color: black; font-weight: bold;" class="dropdown-item" href="login.html">Logout</a></li>
-                        </ul>
+
+                        <!-- Mail us -->
+                        <li class="nav-item" style="font-weight: bold;">
+                            <a style="color: black;" class="nav-link" href="mailto:22ag5a6602@gmail.com"><i class="fa fa-envelope"></i> Mail us</a>
+                        </li>
+
+                        <!-- Call Customer care -->
+                        <li class="nav-item" style="font-weight: bold;">
+                            <a style="color: black;" class="nav-link" href="tel:+919390634012"><i class="fa fa-phone"></i> Call Customer Care</a>
+                        </li>
+
+                        <!-- Logout -->
+                        <li class="nav-item" style="font-weight: bold;">
+                            <a style="color: black;" class="nav-link" href="login.html"><i class="fa fa-sign-out"></i> log out</a>
                         </li>
                   </ul>
               </div>
