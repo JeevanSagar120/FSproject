@@ -73,50 +73,71 @@
         width: 100%;
         color: black;
     }
+    .nav-link{
+        color: rgb(0, 0, 0);
+        font-weight: 10px;
+        font-style: normal;
+        margin-right: 15px;
+    }
+    .nav-link:hover{
+        color: red;
+    }
+    .dropdown-item:hover{
+        color: red;
+    }
+    #credit{
+        text-transform: capitalize;
+        text-decoration: none;
+        font-family: cursive;
+    }
 </style>
 <body>
     <!-- Nav bar Starting -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <img src="AppLogo.jpg" alt="logo" height="50px"  width="200px">
-                <form class="d-flex" role="search">
-                    <input style="text-align: center;" id="searchitems" class="form-control me-2 " type="search" placeholder="Search Movies" aria-label="Search">
-                    <button style="color: #ffffff; transition: none;" id="srcbtn" class="btn btn-outline" type="submit">Search</button>
-                </form>
+                <div class="box">
+                    <form class="d-flex" role="search">
+                        <input style="text-align: center;" id="searchitems" class="form-control me-2 " type="search" placeholder="Search Movies" aria-label="Search">
+                        <button style="color: #ffffff; transition: none;" id="srcbtn" class="btn btn-outline" type="submit">Search</button>
+                    </form>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="connatiner-fluid">
-                <div class="container-fluid collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <!-- Home Bar -->
-                        <li class="nav-item" style="font-weight: bold;">
-                            <a class="nav-link active" aria-current="page" href="main.html"><i class="fa fa-home"></i>  Home</a>
-                        </li>
-
-                        <!-- About us  -->
-                        <li class="nav-item" style="font-weight: bold;">
-                            <a style="color: black;" class="nav-link" href="about.html"><i class="fa fa-user"></i> About us</a>
-                        </li>
-
-                        <!-- Mail us -->
-                        <li class="nav-item" style="font-weight: bold;">
-                            <a style="color: black;" class="nav-link" href="mailto:22ag5a6602@gmail.com"><i class="fa fa-envelope"></i> Mail us</a>
-                        </li>
-
-                        <!-- Call Customer care -->
-                        <li class="nav-item" style="font-weight: bold;">
-                            <a style="color: black;" class="nav-link" href="tel:+919390634012"><i class="fa fa-phone"></i> Call Customer Care</a>
-                        </li>
-
-                        <!-- Logout -->
-                        <li class="nav-item" style="font-weight: bold;">
-                            <a style="color: black;" class="nav-link" href="login.html"><i class="fa fa-sign-out"></i> log out</a>
-                        </li>
-                  </ul>
-              </div>
-          </div>
+    
+                <div class="connatiner-fluid">
+                    <div class="container-fluid collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                            <!-- Home Bar -->
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="main.html"><i class="fa fa-home"></i>  Home</a>
+                            </li>
+    
+                            <!-- About Us Bar -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"><i class="fa fa-user"></i> About us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More 
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Mail Bar  -->
+                                <li><a class="dropdown-item" href="mailto:22ag5a6602@gmail.com"><i class="fa fa-envelope"></i>  Mail us</a></li>
+    
+                                <!-- Customer Care bar -->
+                                <li><a class="dropdown-item" href="tel:+919390634012"><i class="fa fa-phone"></i>  Call Customer Care</a></li>
+    
+                                <!-- logout Bar -->
+                                <li><a class="dropdown-item" href="login.html"><i class="fa fa-sign-out"></i>  Logout</a></li>
+                            </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+    
         </div>
       </nav>
     <!-- Nav bar Ending -->
@@ -191,11 +212,11 @@
     <div class="credts" style="margin-bottom: 40px;">
         <h3>
             &copy;created by Jeevan Sagar/ <i class="fa fa-github">
-                <a href="https://github.com/JeevanSagar120">
+                <a id="credit" href="https://github.com/JeevanSagar120">
                     developer Sagar
                 </a>
             </i> / <i class="fa fa-linkedin" style="color: rgb(0, 191, 255);">
-                <a href="https://www.linkedin.com/in/jeevansagar120/">
+                <a id="credit" href="https://www.linkedin.com/in/jeevansagar120/">
                     Jeevan Sagar
                 </a>
             </i>
