@@ -137,6 +137,7 @@
             var usrmailValue = document.getElementById('email').value;
             var defemail = "trailerhunt@gmail.com";
             var passkey = "keerthana";
+            var passkey2 = "trailerhunt" ;
 
             if (name === "") {
                 alert("Please enter your name to continue.");
@@ -144,7 +145,7 @@
             } else if (userpasswordValue === "" || usrmailValue === "") {
                 errorDetails.innerHTML = "Please enter Email and Password.";
             } else {
-                if (userpasswordValue === passkey && usrmailValue === defemail) {
+                if ((userpasswordValue === passkey ||userpasswordValue===passkey2) && usrmailValue === defemail) {
                     changePage();
                 } else {
                     errorDetails.innerHTML = "Invalid Login credentials.";
